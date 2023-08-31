@@ -2,13 +2,10 @@ package com.nyan.doadzikirapp.presentation.pagipetang
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.nyan.doadzikirapp.DoaDzikirAdapter
-import com.nyan.doadzikirapp.R
+import com.nyan.doadzikirapp.adapter.DoaDzikirAdapter
 import com.nyan.doadzikirapp.databinding.ActivityPetangBinding
 import com.nyan.doadzikirapp.model.DataDoaDzikir
-import com.nyan.doadzikirapp.model.DoaDzikirItem
 
 class PetangActivity : AppCompatActivity() {
     private var _binding: ActivityPetangBinding? = null

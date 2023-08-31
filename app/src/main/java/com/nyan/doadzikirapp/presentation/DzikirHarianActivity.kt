@@ -3,10 +3,9 @@ package com.nyan.doadzikirapp.presentation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.nyan.doadzikirapp.DoaDzikirAdapter
+import com.nyan.doadzikirapp.adapter.DoaDzikirAdapter
 import com.nyan.doadzikirapp.R
 import com.nyan.doadzikirapp.databinding.ActivityDzikirHarianBinding
-import com.nyan.doadzikirapp.model.DataDoaDzikir
 import com.nyan.doadzikirapp.model.DoaDzikirItem
 
 class DzikirHarianActivity : AppCompatActivity() {

@@ -3,7 +3,7 @@ package com.nyan.doadzikirapp.presentation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.nyan.doadzikirapp.DoaDzikirAdapter
+import com.nyan.doadzikirapp.adapter.DoaDzikirAdapter
 import com.nyan.doadzikirapp.databinding.ActivityDzikirSetiapSaatBinding
 import com.nyan.doadzikirapp.model.DataDoaDzikir
 

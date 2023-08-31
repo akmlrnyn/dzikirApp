@@ -1,10 +1,11 @@
-package com.nyan.doadzikirapp
+package com.nyan.doadzikirapp.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.nyan.doadzikirapp.R
 import com.nyan.doadzikirapp.model.DoaDzikirItem
 
 //Adapter is a subclass from RecyclerView, which taken a responsibility to provide views that represent the items in data set

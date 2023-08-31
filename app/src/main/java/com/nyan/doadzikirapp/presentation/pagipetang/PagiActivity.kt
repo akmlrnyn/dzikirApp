@@ -3,10 +3,9 @@ package com.nyan.doadzikirapp.presentation.pagipetang
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.nyan.doadzikirapp.DoaDzikirAdapter
+import com.nyan.doadzikirapp.adapter.DoaDzikirAdapter
 import com.nyan.doadzikirapp.R
 import com.nyan.doadzikirapp.databinding.ActivityPagiBinding
-import com.nyan.doadzikirapp.databinding.ActivityPagiPetangBinding
 import com.nyan.doadzikirapp.model.DataDoaDzikir
 
 class PagiActivity : AppCompatActivity() {
