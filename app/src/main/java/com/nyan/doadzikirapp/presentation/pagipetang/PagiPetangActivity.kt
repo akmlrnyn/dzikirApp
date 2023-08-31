@@ -6,13 +6,18 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import com.nyan.doadzikirapp.R
+import com.nyan.doadzikirapp.databinding.ActivityPagiPetangBinding
 
 class PagiPetangActivity : AppCompatActivity(), View.OnClickListener {
+
+    private var _binding: ActivityPagiPetangBinding? = null
+    private val binding get() = _binding as ActivityPagiPetangBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        _binding = ActivityPagiPetangBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         //show page navigation button
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        setContentView(R.layout.activity_pagi_petang)
+        setContentView(binding.root)
 
         val btnPagi = findViewById<ImageButton>(R.id.img_btn_dzikir_pagi)
         val btnPetang = findViewById<ImageButton>(R.id.img_btn_dzikir_petang)
@@ -34,5 +39,10 @@ class PagiPetangActivity : AppCompatActivity(), View.OnClickListener {
         onBackPressedDispatcher.onBackPressed()
         finish()
         return super.onSupportNavigateUp()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }

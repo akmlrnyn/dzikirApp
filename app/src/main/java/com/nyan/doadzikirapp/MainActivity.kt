@@ -6,12 +6,17 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.google.android.material.card.MaterialCardView
+import com.nyan.doadzikirapp.databinding.ActivityMainBinding
 import com.nyan.doadzikirapp.presentation.DzikirHarianActivity
 import com.nyan.doadzikirapp.presentation.DzikirSetiapSaatActivity
 import com.nyan.doadzikirapp.presentation.pagipetang.PagiPetangActivity
 import com.nyan.doadzikirapp.presentation.QauliyahShalatActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+    private var _binding: ActivityMainBinding? = null
+    private val binding get() = _binding as ActivityMainBinding
+
+
     //declare variable to get in touch with view in layout activity_main
     //use findViewById to communicate with the view
 
@@ -20,12 +25,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         //This method is from dependencies Splash Screen API 12
         installSplashScreen()
         //set content view is used to displaying layout in activity
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
         initView()
     }
 
     fun initView() {
+        _binding = ActivityMainBinding.inflate(layoutInflater)
+
+
         val cardQauliyahShalat = findViewById<MaterialCardView>(R.id.card_qauliyah_shalat)
         val cardDzikir = findViewById<MaterialCardView>(R.id.card_dzikir)
         val cardDzikirHarian = findViewById<MaterialCardView>(R.id.card_dzikir_harian)
@@ -51,5 +59,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
            R.id.card_dzikir_pagi_petang -> startActivity(Intent(this, PagiPetangActivity::class.java))
 
        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }

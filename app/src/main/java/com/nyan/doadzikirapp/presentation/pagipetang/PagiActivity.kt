@@ -33,4 +33,9 @@ class PagiActivity : AppCompatActivity() {
         finish()
         return super.onSupportNavigateUp()
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
 }
