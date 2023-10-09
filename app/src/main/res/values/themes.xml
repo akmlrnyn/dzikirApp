@@ -25,7 +25,5 @@
         <item name="android:statusBarColor">@color/afternoon_orange</item>
         <item name="colorSurface">@color/afternoon_orange</item>
         <item name="colorOnSurface">@color/white</item>
-
-
     </style>
 </resources>

@@ -16,6 +16,16 @@
     <string name="txt_dzikir_petang">Dzikir Petang</string>
     <string name="txt_desc_image_article">Image Article</string>
 
+    <string name="content_txt_icon_dzikir_pagi_petang">Icon Dzikir Pagi Petang</string>
+    <string name="content_txt_icon_dzikir_doa_harian">Icon Dzikir Doa Harian</string>
+    <string name="content_txt_icon_dzikir_setiap_saat">Icon Dzikir Setiap Saat</string>
+    <string name="content_txt_icon_qauliyah_shalat">Icon Qauliyah Shalat</string>
+    <string name="content_txt_icon_btn_dzikir_pagi">Icon btn dzikir Pagi</string>
+    <string name="content_txt_icon_btn_dzikir_petang">Icon btn Dzikir Petang</string>
+    <string name="content_txt_icon_image_for_background_dzikir">Icon image for Background Dzikir</string>
+    <string name="content_txt_image_artikel">Image Poster Detail Artikel</string>
+
+
     <string-array name="arr_img_artikel">
         <item>@drawable/artikel_1</item>
         <item>@drawable/bg_artikel</item>

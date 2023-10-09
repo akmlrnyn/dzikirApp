@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="10dp"
         android:text="@string/app_name"
         android:textColor="@color/blue"
         android:textSize="32sp"
@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"/>
 
     <!--   Region Menu Dzikir & Doa App    -->
     <LinearLayout
@@ -150,7 +151,7 @@
             android:layout_marginTop="8dp"
             app:cardBackgroundColor="@color/gray"
             app:cardCornerRadius="15dp"
-            app:contentPadding="8dp"
+            app:contentPadding="2dp"
             app:strokeWidth="0dp">
 
             <LinearLayout

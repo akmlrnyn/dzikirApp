@@ -13,12 +13,19 @@
         android:theme="@style/Theme.DoaDzikirApp"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.pagipetang.PetangActivity"
+            android:name=".presentation.DetailArticleActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.pagipetang.PagiActivity"
-            android:theme="@style/Theme.App.DzikirPagi"
+            android:name=".presentation.DetailActivity"
             android:exported="false" />
+        <activity
+            android:name=".presentation.pagipetang.PetangActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App.DzikirPetang" />
+        <activity
+            android:name=".presentation.pagipetang.PagiActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App.DzikirPagi" />
         <activity
             android:name=".presentation.pagipetang.PagiPetangActivity"
             android:exported="false" />

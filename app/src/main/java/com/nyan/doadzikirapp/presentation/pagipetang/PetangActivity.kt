@@ -3,6 +3,7 @@ package com.nyan.doadzikirapp.presentation.pagipetang
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.nyan.doadzikirapp.R
 import com.nyan.doadzikirapp.adapter.DoaDzikirAdapter
 import com.nyan.doadzikirapp.databinding.ActivityPetangBinding
 import com.nyan.doadzikirapp.model.DataDoaDzikir
@@ -14,6 +15,7 @@ class PetangActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //show page navigation button
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = getString(R.string.txt_dzikir_petang)
         _binding = ActivityPetangBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
