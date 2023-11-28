@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.nyan.doadzikirapp"
-    compileSdkPreview = "UpsideDownCake"
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.nyan.doadzikirapp"
-        minSdk = 24
-        targetSdk = 33
+        minSdk = 28
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -51,5 +51,5 @@ dependencies {
 
     // Splash screen API 12
     // this will need Android API's UpsideDownCake
-    implementation("androidx.core:core-splashscreen:1.1.0-alpha01")
+    implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
 }
